@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|bottom"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/notesListView"
+            android:layout_width="match_parent"
+            android:layout_height="332dp"
+            android:layout_weight="0.06" >
+        </ListView>
+
+       
+        
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            
+
+            <Button
+                android:id="@+id/addBtn"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:drawableLeft="@drawable/add"
+                android:text="@string/add_btn" />
+
+            <ProgressBar
+               android:id="@+id/locationProgessBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|right" />
+            
+
+        </FrameLayout>
+        
+         <Button
+                android:id="@+id/logoutBtn"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="@string/log_out" />
+
+        
+    </LinearLayout>
+
+</LinearLayout>
